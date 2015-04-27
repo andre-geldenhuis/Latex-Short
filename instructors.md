@@ -14,7 +14,7 @@ behind its running example).
 
 *   Some hard-won experience.
 
-## [Topic Title One](01-one.html)
+## [Intro to LaTeX](01-one.html)
 
 *   A specific tip or trick about the first topic.
 
@@ -25,6 +25,6 @@ behind its running example).
 
 2.  Discussion of second challenge.
 
-## [Topic Title Two](02-two.html)
+## [A real world example](02-two.html)
 
 *   Et cetera.

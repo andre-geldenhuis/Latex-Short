@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Intro to LaTeX
-subtitle: Topic Title One
+title: LaTeX
+subtitle: Intro to LaTeX
 minutes: 10
 ---
 > ## Learning Objectives {.objectives}

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: A real world example
-subtitle: Topic Title Two
+title: LaTeX
+subtitle: A real world example
 minutes: 10
 ---
 > ## Learning Objectives {.objectives}
