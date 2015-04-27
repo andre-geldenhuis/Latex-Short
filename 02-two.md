@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Lesson Title
+title: A real world example
 subtitle: Topic Title Two
 minutes: 10
 ---

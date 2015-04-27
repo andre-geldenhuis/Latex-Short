@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Lesson Title
+title: Intro to LaTeX
 subtitle: Topic Title One
 minutes: 10
 ---

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Lesson Title
+title: A short Introduction to LaTeX
 ---
 Paragraph of introductory material.
 
@@ -11,8 +11,8 @@ Paragraph of introductory material.
 
 ## Topics
 
-1.  [Topic Title One](01-one.html)
-2.  [Topic Title Two](02-two.html)
+1.  [Intro to LaTeX](01-one.html)
+2.  [A real world example](02-two.html)
 
 ## Other Resources
 

@@ -1,41 +1,64 @@
 ---
 layout: slides
-title: LaTeX
+title: Why LaTeX ?
 subtitle: Motivation
 ---
-## Our Mission
+## Why Choose LaTeX?
 
-We make scientists and engineering more productive by teaching them basic computing skills.
+- The output looks great -- more professional than MS office
+  - an example goes here
+- You can focus on the actual writing, rather than the formatting
+- When you DO come to do the formatting, it's easy to RELIABLY make global changes
+- You can get a lot of control with a little effort
+- Independent of your computer’s platform -- you can open tex files on any system AND it’s free.
+  - Free as in speech and free as in beer
+
+## Other great things about LaTeX
+
+- The output is trustworthy and consistent
+  - You won't get random changes of font
+  - When you change the document settings, it changes them everywhere
+    -So it won't matter if you forget to select say your figure captions
+  - You can automatically create your table of contents AND have it link to the right parts of your document
+
+## Other great things about LaTeX
+
+- Numbering is done automatically
+  - You can shuffle around pieces of your document without worrying about the order
+  - Things that update automatically:
+    - section/chapter numbering
+    - Figures/tables/schemes (also known as "floats")
+    - Equations and compounds -- you can even get automatic numbering to happen WITHIN your scheme images
 
 
-## The Problem
+## Other great things about LaTeX
 
-- Surveyed 1972 scientists in 2008.
-- "How do you use computers?"
-- "How did you learn what you know?"
+- It's very easy to make shortcuts (also known as macros)
+  - -- give some examples -- chemistry coupling constants, long words, words with accents
+  
 
+## Other great things about LaTeX
 
-## The Problem
+- A new line doesn't mean a new paragraph, which is really great for lists of data
+  - e.g chemistry NMR list
+  - some other example that's not from chemistry
+  
+## Other great things about LaTeX
 
-- Scientists spend 40% of their time building or using software.
-- 55% say this figure is rising.
-- *96% are mostly self-taught*.
+- You can choose your level of use (or a better way of saying this)
+  - You can stick to the basics, and it will look great
+  - OR you can get really involved in styles and formatting control -- there are many fancy things you can do!
+  
+## Common complaints about LaTeX and why they're wrong
 
+- You have to learn how to code
+  - Not really.  There are a few commands that you have to use, but they're more like keyboard shortcuts (e.g. ctrl+B for bold) than proper coding
+- Some more things -- steep learning curve
+  - Word also has a steep learning curve for anything more than the basics!
 
-## The Problem
-
-- No hard data on how *well* they do things.
-- But anecdotal evidence suggests "not very".
-
-
-## Our Solution
-
-- Intensive hands-on training.
-- Two full days of instruction.
-- Unix shell (automate repetitive tasks)
-- Git and GitHub (track and share work)
-- Python or R (build modular code)
-- SQL (manage data)
+## Other things to incorporate
+ 
+- an explanation of the difference between LaTeX and word (WYSIWYG vs write now, typeset later [or a nicer way of saying that])
 
 
 ## Outcomes
@@ -51,21 +74,6 @@ We make scientists and engineering more productive by teaching them basic comput
 - Reproducible research, open science, ...
 
 
-## The Details
-
-- Materials are all open access.
-- Instructors are volunteers.
-- Only cost is travel and accommodation
-- (but contributions to central costs are welcome).
-
-
-## How To Help
-
-- Come and learn.
-- Join the discussion.
-- Host a workshop.
-- Become an instructor.
-- Create new teaching materials.
 
 
 ## Learn More
