@@ -13,7 +13,7 @@ You also agree to abide by our
 
 ## Getting Started
 
-1.  We use GitHub flow to manage changes,
+1.  We use GitHub flow to manage changes, HELLO!!!
     which is explained in the chapter [Contributing to a Project][pro-git-chapter]
     in Scott Chacon's book *Pro Git*.
 
