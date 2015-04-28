@@ -27,44 +27,83 @@
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
           <h1 class="title">LaTeX</h1>
-          <h2 class="subtitle">Intro to LaTeX</h2>
+          <h2 class="subtitle">Document Structure and Basics</h2>
 <div id="learning-objectives" class="objectives panel panel-warning">
 <div class="panel-heading">
 <h2><span class="glyphicon glyphicon-certificate"></span>Learning Objectives</h2>
 </div>
 <div class="panel-body">
 <ul>
-<li>Learning objective 1</li>
-<li>Learning objective 2</li>
+<li>Basic LaTeX document structure</li>
+<li>How commands work</li>
+<li>Searching for help</li>
 </ul>
 </div>
 </div>
-<p>Paragraphs of text --- possibly including <a href="reference.html#key-word-1">key word 1</a> --- mixed with:</p>
-<pre class="sourceCode python"><code class="sourceCode python">some code:
-    to be displayed</code></pre>
-<pre class="output"><code>output
-from
-program</code></pre>
-<pre class="error"><code>error reports from program (if any)</code></pre>
-<p>and possibly including:</p>
-<div id="callout-box" class="callout panel panel-info">
+<p>Unlike a word document, LaTeX documents need a little structure before we can get started writing. Thankfully many editors automatically create this for you when you make a new document.</p>
+<p>If you are using sharelatex, create a new document with the big red New Project button on the top left. Lets call it Latex Intro. In your new project you will see your commands on the left pane and the output on the right pane.</p>
+<p>In the left pane you should see the LaTeX document with the minimal amount of required structure.</p>
+<p>--- possibly including <a href="reference.html#key-word-1">key word 1</a> ---</p>
+<pre class="sourceCode latex"><code class="sourceCode latex">\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Latex Intro}
+\author{andre.geldenhuis }
+\date{April 2015}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\end{document}</code></pre>
+<div id="if-you-are-not-using-sharelatex" class="callout panel panel-info">
 <div class="panel-heading">
-<h2><span class="glyphicon glyphicon-pushpin"></span>Callout Box</h2>
+<h2><span class="glyphicon glyphicon-pushpin"></span>If you are not using ShareLatex</h2>
 </div>
 <div class="panel-body">
-<p>An aside of some kind.</p>
+<p>You might not have the same minimal document, if so just copy the commands above and paste them into your editor. Note you might want to change the author to you!</p>
 </div>
 </div>
-<p>or an image from the <code>figs</code> directory:</p>
-<div class="figure">
-<img src="fig/example.svg" title="this is the image&#39;s alt text" alt="this is the image&#39;s title" /><p class="caption">this is the image's title</p>
-</div>
-<div id="challenge-title" class="challenge panel panel-success">
+<p>On the right hand panel we see the output we get when we compile the LaTeX commands. You will immediately notice the output is very different from the input commands. This is the key difference between <strong>W</strong>hat <strong>Y</strong>ou <strong>S</strong>ee <strong>i</strong>s <strong>W</strong>hat <strong>Y</strong>ou <strong>G</strong>et (WYSIWYG - Pronounced &quot;wiz-ee-wig&quot;) and LaTeX which separates presentation from content. Initially this can be frustrating to users who are familiar with word but it offers some big advantages once you are used to it, such as focusing on writing content rather than constantly tweaking formatting.</p>
+<p>Every time we use in LaTeX, it is interpreted as a command. Some commands have arguments, they are contained inside the curly brackets {}</p>
+<pre class="sourceCode latex"><code class="sourceCode latex">\title{Latex Intro}</code></pre>
+<p>In this case we are using the command to tell LaTeX to create a title, and setting the title to <em>Latex Intro</em></p>
+<div id="remove-a-command-and-see-what-happens" class="challenge panel panel-success">
 <div class="panel-heading">
-<h2><span class="glyphicon glyphicon-pencil"></span>Challenge Title</h2>
+<h2><span class="glyphicon glyphicon-pencil"></span>Remove a command and see what happens</h2>
 </div>
 <div class="panel-body">
-<p>Description of a single challenge. There may be several challenges.</p>
+<p>Try remove a command and then recompile to see what happens I suggest removing <code>\maketitle</code><br />what happens? Replace <code>\maketitle</code> afterwards</p>
+</div>
+</div>
+<p>LaTeX documents have some required commands, we need to have a <code>\documentclass</code> a <code>\begin{document}</code> and an <code>\end{document}</code></p>
+<div id="remove-a-required-command" class="challenge panel panel-success">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pencil"></span>Remove a required command</h2>
+</div>
+<div class="panel-body">
+<p>Try removing one of the required commands and recompiling the document</p>
+<p>Depending on which command you removed you will get different errors, you can see the errors by clicking on the <em>logs and output files</em> icon next to the recompile button.</p>
+</div>
+</div>
+<div id="latex-tries-to-compile-with-errors" class="callout panel panel-info">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pushpin"></span>LaTeX tries to compile with errors</h2>
+</div>
+<div class="panel-body">
+<p>Note that LaTeX tries to compile your document, even with errors. Sometimes it even succeeds. If you had removed <code>\begin{document}</code> you would still get a reasonable output as LaTeX guesses what you are missing and tries to compile anyway. However, it is never a good idea to just keep going with compile errors as they <strong>will</strong> cause problems down the road. Always check what the compile errors are and try to fix them.</p>
+</div>
+</div>
+<p>LaTeX Documents also have a minimal amount of structure, the preamble and the document text. All the commands above <code>\begin{document}</code> are known as the preamble. In the preamble you setup which packages to use, make board overarching changes to your document, such as selecting fonts or configuring layouts.</p>
+<p>Everything from <code>\begin{document}</code> to <code>\end{document}</code> is the document text. This is where you write your document.</p>
+<div id="add-some-content" class="challenge panel panel-success">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pencil"></span>Add some content</h2>
+</div>
+<div class="panel-body">
+<p>Write a paragraph or two below the <code>\section{Introduction}</code> and compile it.</p>
 </div>
 </div>
         </div>

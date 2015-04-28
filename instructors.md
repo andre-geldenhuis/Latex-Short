@@ -14,7 +14,7 @@ behind its running example).
 
 *   Some hard-won experience.
 
-## [Intro to LaTeX](01-one.html)
+## [Document Structure and Basics](01-one.html)
 
 *   A specific tip or trick about the first topic.
 

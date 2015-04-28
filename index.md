@@ -6,12 +6,13 @@ Paragraph of introductory material.
 
 > ## Prerequisites {.prereq}
 >
-> A short paragraph describing what learners need to know
-> before tackling this lesson.
+> You will need a LaTeX editor of some sort.  Our lessons uses
+> [ShareLateX](https://www.sharelatex.com/)  If you would rather not use 
+> cloud latex editor you can install it locally.  Here is a good 
 
 ## Topics
 
-1.  [Intro to LaTeX](01-one.html)
+1.  [Document Structure and Basics](01-one.html)
 2.  [A real world example](02-two.html)
 
 ## Other Resources

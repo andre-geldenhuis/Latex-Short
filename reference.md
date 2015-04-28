@@ -3,7 +3,7 @@ layout: page
 title: Lesson Title
 subtitle: Reference
 ---
-## [Intro to LaTeX](01-one.html)
+## [Document Structure and Basics](01-one.html)
 
 ...commands and examples...
 
