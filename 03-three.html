@@ -27,27 +27,20 @@
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
           <h1 class="title">LaTeX</h1>
-          <h2 class="subtitle">Sections, subsections and the table of contents</h2>
+          <h2 class="subtitle">Formatting, symbols and math</h2>
 <div id="learning-objectives" class="objectives panel panel-warning">
 <div class="panel-heading">
 <h2><span class="glyphicon glyphicon-certificate"></span>Learning Objectives</h2>
 </div>
 <div class="panel-body">
 <ul>
-<li>Use of Sections and subsections</li>
-<li><strong>T</strong>able <strong>o</strong>f <strong>C</strong>ontents (TOC)</li>
-<li>Searching for help</li>
+<li>Simple text formatting</li>
+<li>Symbols</li>
+<li>Math mode</li>
 </ul>
 </div>
 </div>
-<blockquote>
-<ul>
-<li>Simple use of Math Mode</li>
-<li>Basic formatting in LaTeX</li>
-<li>Images and Floats</li>
-</ul>
-</blockquote>
-<p>If you are using ShareLatex you will already have a section in your document. Otherwise, you can copy the following commands into your LaTeX editor.</p>
+<p>If you have done the previous lessons your document should look something like the following</p>
 <pre class="sourceCode latex"><code class="sourceCode latex">\documentclass{article}
 \usepackage[utf8]{inputenc}
 
@@ -71,44 +64,52 @@ efficitur faucibus nisl, eget posuere urna. Phasellus tincidunt dui
 lacus, in semper nulla volutpat eget. Pellentesque habitant morbi 
 tristique senectus et netus et malesuada fames ac turpis egestas. 
 Suspendisse nibh massa, rhoncus aliquam mattis in, ultrices eu urna. 
-Vivamus in accumsan erat. -- generated with http://www.lipsum.com/
+Vivamus in accumsan erat. 
+
+
+\section{Thesis}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu nisl nisi. 
+Curabitur sagittis sodales laoreet. Fusce efficitur dictum orci, sed 
+viverra ex ullamcorper a. Morbi sem libero, placerat eu augue nec, 
+hendrerit eleifend tortor. Curabitur auctor magna eget hendrerit accumsan. 
+Aenean faucibus magna sed enim ullamcorper vulputate. Aliquam non eros ac 
+quam sollicitudin cursus eu ac est. Donec consectetur eget nibh id mollis. 
+Quisque euismod diam velit, quis pretium justo accumsan id. 
+
+\subsection{Abstract}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Mauris facilisis, diam pretium pretium lobortis, metus dolor fermentum 
+augue, ultrices consequat dolor tortor nec risus. Aenean sagittis 
+hendrerit turpis, a porta eros facilisis in. In efficitur posuere risus, 
+eu ullamcorper arcu. Morbi fermentum auctor arcu, non interdum ligula 
+placerat maximus. Morbi nec metus et urna gravida rhoncus. Donec interdum, 
+nisi vitae volutpat vehicula, odio eros pulvinar mauris, ac mollis elit 
+enim sit amet diam. Ut blandit hendrerit luctus. Duis eget augue sed mi 
+pellentesque mattis non finibus libero. Aliquam rhoncus, orci tempus 
+consectetur mattis, enim turpis dignissim eros, sit amet sollicitudin 
+justo turpis a justo. 
 
 \end{document}</code></pre>
-<p>It is quite common when writing LaTeX documents that you will forget how to do something. The easiest way to remember is to look back at older parts of your current document or documents you wrote in the past.</p>
-<div id="add-a-new-section" class="challenge panel panel-success">
+<p>In LaTeX everything is done with commands, including basic formatting. <code>\textbf{text}</code> will boldface the text in the brackets. <code>\textbf</code> is the command and <code>{ }</code> contains the argument to that command. Note that you can apply this command to an as much of your document as you like.</p>
+<div id="apply-some-formatting" class="challenge panel panel-success">
 <div class="panel-heading">
-<h2><span class="glyphicon glyphicon-pencil"></span>Add a new section</h2>
+<h2><span class="glyphicon glyphicon-pencil"></span>Apply some formatting</h2>
 </div>
 <div class="panel-body">
-<p>Add a new section below the paragraph making up your introduction. Look to the commands already in your document to determine how best to do it. One you have a new section, check that your document compiles, then add some text to your new section.</p>
+<p>Bold face your entire introduction paragraph. Italicise several <em>separate</em> words in your second paragraph. Remember to google for commands you don't know.</p>
 </div>
 </div>
-<p>Sometimes (often) when writing you will want to do something that you don't have an example of in your previous writing and commands.<br />Thankfully there is a huge community of helpful LaTeX users! Googling for what you want to do will usually turn up something helpful. You can add terms to your search to bring up particularly helpful communities, such as <a href="http://stackoverflow.com/">stackoverflow</a> if your first search is not fruitful.</p>
-<div id="add-a-subsection" class="challenge panel panel-success">
+<div id="three-ways-to-add-italics-to-text" class="callout panel panel-info">
 <div class="panel-heading">
-<h2><span class="glyphicon glyphicon-pencil"></span>Add a subsection</h2>
+<h2><span class="glyphicon glyphicon-pushpin"></span>Three ways to add italics to text</h2>
 </div>
 <div class="panel-body">
-<p>Google for how to add a subsection to your document.</p>
+<p>There are actually three ways to italicise text in LaTeX, can your work out what the differences are?</p>
 </div>
 </div>
-<div id="googling-for-help" class="callout panel panel-info">
-<div class="panel-heading">
-<h2><span class="glyphicon glyphicon-pushpin"></span>Googling for help</h2>
-</div>
-<div class="panel-body">
-<p>Never be afraid to google for a solution to your LaTeX problem, even experts google for solutions all the time. Even when you can figure out a way of doing something complicated yourself, often someone else has figured out a more elegant solution.</p>
-</div>
-</div>
-<p>One of the reasons people use LaTeX is to avoid unnecessary work. Now that we have some sections and subsections, lets automatically create a table of contents.</p>
-<div id="add-a-table-of-contents" class="challenge panel panel-success">
-<div class="panel-heading">
-<h2><span class="glyphicon glyphicon-pencil"></span>Add a Table of Contents</h2>
-</div>
-<div class="panel-body">
-<p>Insert <code>\tableofcontents</code> in the location you would like the TOC to appear. Once your document compiles, try moving <code>\tableofcontents</code> somewhere else. What happens if you move it before <code>\begin{document}</code>? Have a look at the error message. What kif you moved it about after <code>end{document}</code> ? Return the TOC to a sensible location when done and make sure your document compiles without errors</p>
-</div>
-</div>
+<p>Math mode is used to generate mathematical equations and symbols. It is also used to generate many non math symbols.</p>
         </div>
       </div>
       </article>
