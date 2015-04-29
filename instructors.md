@@ -25,6 +25,9 @@ behind its running example).
 
 2.  Discussion of second challenge.
 
-## [A real world example](02-two.html)
+## [Sections, subsections and the table of contents](02-two.html)
 
 *   Et cetera.
+
+## [Formatting, symbols and math](03-three.html)
+*   ET cetera.

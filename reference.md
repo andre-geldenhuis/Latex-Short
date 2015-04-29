@@ -7,7 +7,11 @@ subtitle: Reference
 
 ...commands and examples...
 
-## [A real world example](02-two.html)
+## [Sections, subsections and the table of contents](02-two.html)
+
+...commands and examples...
+
+## [Formatting, symbols and math](03-three.html)
 
 ...commands and examples...
 

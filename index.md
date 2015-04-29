@@ -13,7 +13,8 @@ Paragraph of introductory material.
 ## Topics
 
 1.  [Document Structure and Basics](01-one.html)
-2.  [A real world example](02-two.html)
+2.  [Sections, subsections and the table of contents](02-two.html)
+3.  [Formatting, symbols and math](03-three.html)
 
 ## Other Resources
 
