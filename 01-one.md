@@ -82,7 +82,9 @@ LaTeX documents have some required commands, we need to have a
 > 
 > Depending on which command you removed you will get different errors,
 > you can see the errors by clicking on the *logs and output files* icon
-> next to the recompile button.
+> next to the recompile button.  Have a look at the errors and try to
+> get a feel for what they mean.  Afterward, replace the required command
+> you removed and make sure your document compiles correctly.
 
 > ## LaTeX tries to compile with errors {.callout}
 >
