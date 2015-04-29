@@ -14,12 +14,6 @@ minutes: 10
 > * Basic formatting in LaTeX
 > * Images and Floats
 
-
-
-In this lesson we will cover day to day tasks in LaTeX, how to format 
-your document, how to add symbols and equations, adding images and figures
-and lastly sections and subsections.
-
 If you are using ShareLatex you will already have a section in your document.
 Otherwise, you can copy the following commands into your LaTeX editor.
 
@@ -93,7 +87,7 @@ create a table of contents.
 > ```\tableofcontents``` somewhere else.  What happens if you move it
 > before ```\begin{document}```? Have a look at the error message.
 > What kif you moved it about after ```end{document}``` ?  Return
-> the TOC to a sensible lcaotion when done and make sure your document
+> the TOC to a sensible location when done and make sure your document
 > compiles without errors 
 
 
