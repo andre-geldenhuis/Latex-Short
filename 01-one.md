@@ -8,7 +8,6 @@ minutes: 10
 >
 > * Basic LaTeX document structure
 > * How commands work
-> * Searching for help
 
 Unlike a word document, LaTeX documents need a little structure before
 we can get started writing.  Thankfully many editors automatically create 
