@@ -133,11 +133,11 @@ the first time we have come across a command with multiple arguments.
 > Try out a simple fraction in math mode.
 
 If we have a more complicated mathematical equation, it should be placed
-on its own, rather than being inline.  Here we use ```$$ $$``` to set the
-display math environment.  Equations are one of LaTeX strong points, it
-allows you to quickly enter equations that would be very hard to create
+on its own, rather than being inline.  Here we use 
+```\begin{equation}   \end{equation}``` to set the display math environment.  Equations 
+are one of LaTeX strong points, it allows you to quickly enter equations that would be very hard to create
 in word.  It can look complicated at first, but once you are used to it,
-it is a fast and reliable way to render equations
+it is a fast and reliable way to render equations.
 
 > ## A more complex equation {.challenge}
 > 

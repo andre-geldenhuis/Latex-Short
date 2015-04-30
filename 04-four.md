@@ -77,14 +77,15 @@ $hello^2$ $hello_2$ $hello_{world}$
 
 $\frac{topline}{bottomline}$
 
-$$
+\begin{equation}
 \int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}
-$$
+\end{equation}
 
-$$\underbrace{a+\overbrace{b+\cdots}^{{}=t}+z}
+\begin{equation}
+\underbrace{a+\overbrace{b+\cdots}^{{}=t}+z}
 _{\mathrm{total}} ~~
 a+{\overbrace{b+\cdots}}^{126}+z
-$$
+\end{equation}
 
 \end{document}
 ~~~
@@ -104,6 +105,102 @@ To add an image we use the command ```include{imagename}```.
 > upload it to the images folder in sharelatex (upload button next to the 
 > new folder button).  If the file ends up in the wrong location you can
 > just drag and drop it to the images folder. 
+
+> ## Add the image to your document  {.challenge}
+> 
+> Now add the image to your document. You will need the graphicx package
+> in your preamble and you will also need to set your graphicspath to ```images/```.
+> Create a new section and add your image to it.  
+
+When adding images into documents like a thesis or a publication it is
+a good idea to add the image in a figure frame.  This is done by creating 
+a figure environment with ```\begin{figure} ... \end{figure}```.
+
+> ## Add a figure frame  {.challenge}
+> Modify the image you included previously to be a figure.  Wrap the
+> original ```\includegraphics``` with the figure environment. Note that
+> you can put everything on one line but it is tidier to put the environment
+> begin and end on separate lines.
+
+> ## LaTeX handles formatting {.callout}
+>
+> When you recompile your document, did you notice the image (now a figure)
+> moved ?  This is because LaTeX is trying to put the figure in the best
+> place to optimise the look of the page.  Sometimes you might not want
+> LaTeX to do this, you can suggest the LaTeX should place the figure
+> where it is in the source document by adding ```[h]``` (for **h**ere) after 
+> begin figure environment like this ```\begin{figure}[h]```.  Note that 
+> this is only a suggestion, if you want to force LaTeX to place the 
+> figure **H**ere, use a capital ```H```
+
+Initially the image might be quite small, you can set the size of the image
+by adding the argument ```[width=150pt]``` to ```\includegraphics```.  
+In this case it would be ```\includegraphics[width=150pt]{space_rocket}```.
+However, it might be more convenient to set the width to a ratio of 
+something else on the page.  LaTeX has many macros which return useful
+values from the current document such as ```\textwidth``` and 
+```\paperwidth```.
+
+> ## Change the size of the image {.challenge}
+> Set the size of the image, but use a reference to the text width or 
+> the paper width.  Try both.
+
+> ## Warning messages {.callout}
+>
+> Note that when you set the image to ```\textwidth``` you get a *warning*.
+> This is shown as a yellow number next to the compile button. Have a look
+> at the log by clicking the button.  What does this warning mean?  When
+> you set the width to ```\paperwidth``` you get even more warnings.  Have
+> a look at them too.  Warnings don't stop your document from compiling
+> but they do mean it might not look as good as it could.  It is a good
+> idea to compile your document often and try to fix errors and warnings 
+> when they come up.  Note that sometimes you won't be able to remove
+> all the warnings, particularly warnings about LaTeX not being able
+> to place objects where it would like.
+
+In this case, to remove the warnings you need to reduce the image size.  
+We can do this by setting the image to be a ratio of either ```\paperwidth```
+or ```\textwidth```.  You do this my multiplying ```\textwidth``` by a 
+fraction.  
+
+> ## Adjust the image width {.challenge}
+>
+> Try ```0.2\textwidth```. Experiment with other values too.
+
+Now that we have a more reasonable image size, lets add a caption to the 
+image.  This is done with the ```\caption{ }``` command. 
+
+> ## Add a caption {.challenge}
+>
+> Try adding a simple caption.  Once that has compiled, we can try a more
+> complex caption, we can include an inline math enviroment. Try adding 
+> ```\Delta V = \nu_e \ln\frac{m_0}{m_1}``` to your caption.  Remember
+> that you will need to put it inside the inline math environment.
+
+> ## Center the image {.challenge}
+>
+> The image might look better centred.  Google for how to do this.
+
+Now that we have a nice figure with a cool caption, lets refer to this figure
+elsewhere in our document.  We do this by adding a label to our figure
+and then cross-referencing it elsewhere in the document.  We give the
+figure a label by adding ```\label{fig:CoolRocket}``` to the figure
+environment.  The Best practice is to add the label *inside* the caption.
+So ```\caption{Some Neat Caption\label{fig:CoolRocket}}``` We refer to 
+it in the document text by ```\ref{fig:CoolRocket}```
+or ```\pageref{fig:CoolRocket}```.  Note that labeling and cross-referencing
+is **case sensitive**.
+
+> ## Label and Cross-Reference your figure {.challenge}
+>
+> Add the label to the figure environment and then refer to it in an 
+> earlier paragraph.  Try both ways of cross-referencing your figure.
+
+
+
+
+
+
 
 
 
