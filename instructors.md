@@ -33,3 +33,7 @@ behind its running example).
 *   ET cetera.
 
 ## [Images, Figures and Cross Referencing](04-four.html)
+
+* Note that references are case sensitive.  Additionally splitting a label
+    name with an underscore does not work. cool_rocket will cause hard to
+    diagnose errors.
