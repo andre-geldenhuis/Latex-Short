@@ -196,6 +196,30 @@ is **case sensitive**.
 > Add the label to the figure environment and then refer to it in an 
 > earlier paragraph.  Try both ways of cross-referencing your figure.
 
+> ## Labelling Equations {.callout}
+>
+> You have seen how to label the figure environment, can you do the same
+> for equations?  This works best with non-inline equations defined by
+> ```\begin{equation}``` and the like.
+
+> ## Add another figure {.challenge}
+>
+> Upload the image [polarplot.eps](https://github.com/andre-geldenhuis/Latex-Short/blob/gh-pages/fig/polarplot.eps)
+> to your images folder on ShareLatex.  Above the figure you already have, 
+> add the new image in its own figure environment. Give it its own caption 
+> and label.
+
+> ## LaTeX handles laborious tasks for you {.callout}
+>
+> Note that previously your ```\ref{CoolRocket``` returned 1 for the first
+> figure?  What did it change to when you added a new figure above the 
+> old one?
+
+Now that we have several figures, it might be nice to have a list of figures.
+
+> ## List of figures {.challenge}
+>
+> Add a list of figures to your document in a sensible location.  ```\listoffigures```
 
 
 
