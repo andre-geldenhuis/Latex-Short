@@ -83,9 +83,80 @@ can apply this command to an as much of your document as you like.
 > There are actually three ways to italicise text in LaTeX, can your
 > work out what the differences are?
 
+LaTeX lets you add a huge variety of symbols to your document. The easiest
+way to add these symbols to your document is to use Math Mode.  There are
+several ways to use math mode but for now we we use inline math mode.  We
+do this by placing our symbol command inside a pair of ```$```. To create
+the greek character alpha we enter ```$ \alpha $```
 
-Math mode is used to generate mathematical equations and symbols.  It is
-also used to generate many non math symbols.  
+> ## Apply some symbols your document {.challenge}
+>
+> Add the symbols ```\alpha```, ```\rightarrow``` and ```\Rightarrow```.
+> How would we add the logic symbol for all or exists?  You can also put
+> multiple symbols inside the pair of ```$  $```.
+
+The space between the ```$  $``` symbols is known as an environment, in this
+case, the maths environment.  We also use this math mode environment to
+create accented characters. This is done via an accent command with the
+character as the argument.  For instance we can create and acute e by 
+entering ```$ \acute{e} $```
+
+> ## Add accented characters to your document. {.challenge}
+>
+> The accenting commands are 
+>  ```\hat{a}``` , ```\acute{a}``` , ```\bar{a}``` ,  ```\dot{a}``` , ```\breve{a}``` ,  
+>  ```\check{a}``` , ```\grave{a}``` , ```\vec{a}``` , ```\ddot{a}``` , ```\tilde{a}``` 
+> Try put some accented characters into your document.
+
+> ## LaTeX handles all formatting {.callout}
+>
+> If you are anything like me, you might have just copy pasted the 
+> the accent commands directly into the environment between a pair of 
+> ```$  $```.  What happens to the spaces?  What about a return breaking
+> the line? 
+
+Math mode is also useful for superscript and subscript.  ```^``` is used 
+for super script and ```_``` is used for subscript.
+
+> ## Use superscript and subscript in your document. {.challenge}
+>
+> Try out subscripts and superscripts.  How would you apply a superscript
+> to more than one character?  Remember to use math mode!
+
+Lastly math mode can obviously be used for math!  
+```\frac{topline}{bottomline}``` creates a fraction.  Note that this is 
+the first time we have come across a command with multiple arguments.
+
+> ## Make a simple fraction. {.challenge}
+>
+> Try out a simple fraction in math mode.
+
+If we have a more complicated mathematical equation, it should be placed
+on its own, rather than being inline.  Here we use ```$$ $$``` to set the
+display math environment.  Equations are one of LaTeX strong points, it
+allows you to quickly enter equations that would be very hard to create
+in word.  It can look complicated at first, but once you are used to it,
+it is a fast and reliable way to render equations
+
+> ## A more complex equation {.callout}
+> 
+> Enter the following into a *display math* enviroment
+> ```{.latex}
+> \int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}
+> ```
+> or
+> ```{.latex}
+> \underbrace{a+\overbrace{b+\cdots}^{{}=t}+z}
+>_{\mathrm{total}} ~~
+> a+{\overbrace{b+\cdots}}^{126}+z
+> ```
+
+
+
+
+
+
+
 
 
 
