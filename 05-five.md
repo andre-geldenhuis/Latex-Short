@@ -11,8 +11,8 @@ minutes: 10
 
 If you have been following along you should have roughly the following
 document in ShareLatex.  You should also havea  folder called images
-with the following two files in it.  [space_rocket.pdf](https://github.com/andre-geldenhuis/Latex-Short/blob/gh-pages/fig/space_rocket.pdf)
- and [polarplot.eps](https://github.com/andre-geldenhuis/Latex-Short/blob/gh-pages/fig/polarplot.eps).
+with the following two files in it.  [space_rocket.pdf](https://github.com/Andre Geldenhuis and Sarah Hoyte/Latex-Short/blob/gh-pages/fig/space_rocket.pdf)
+ and [polarplot.eps](https://github.com/Andre Geldenhuis and Sarah Hoyte/Latex-Short/blob/gh-pages/fig/polarplot.eps).
 
 
 ~~~ {.latex}
@@ -23,7 +23,7 @@ with the following two files in it.  [space_rocket.pdf](https://github.com/andre
 \graphicspath{ {images/} }
 
 \title{Latex Intro}
-\author{Andre Geldenhuis }
+\author{Andre Geldenhuis and Sarah Hoyte }
 \date{April 2015}
 
 \begin{document}

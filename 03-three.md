@@ -18,7 +18,7 @@ like the following
 \usepackage[utf8]{inputenc}
 
 \title{Latex Intro}
-\author{andre.geldenhuis }
+\author{Andre Geldenhuis and Sarah Hoyte }
 \date{April 2015}
 
 \begin{document}
