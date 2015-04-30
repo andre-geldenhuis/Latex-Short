@@ -8,7 +8,8 @@ Paragraph of introductory material.
 >
 > You will need a LaTeX editor of some sort.  Our lessons uses
 > [ShareLateX](https://www.sharelatex.com/)  If you would rather not use 
-> cloud latex editor you can install it locally.  Here is a good 
+> cloud latex editor you can install it locally.  [Guide for local 
+> installation](http://latex-project.org/ftp.html). 
 
 ## Topics
 
