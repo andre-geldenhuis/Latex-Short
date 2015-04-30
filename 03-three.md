@@ -91,6 +91,7 @@ the greek character alpha we enter ```$ \alpha $```
 
 > ## Apply some symbols your document {.challenge}
 >
+> Create a new section in your document.
 > Add the symbols ```\alpha```, ```\rightarrow``` and ```\Rightarrow```.
 > How would we add the logic symbol for all or exists?  You can also put
 > multiple symbols inside the pair of ```$  $```.
