@@ -3,7 +3,7 @@ LaTeX - Short
 
 This is a short introduction to Latex use aimed at postgraduate students
 and academics in science and humanities.  The compiled version of the lesson
-can be found [here](http://andre.geldenhuis.github.io/Latex-Short/)
+can be found [here](http://andre-geldenhuis.github.io/Latex-Short/)
 
 
 ## Contributing to this lesson

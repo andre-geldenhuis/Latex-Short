@@ -27,4 +27,4 @@ Paragraph of introductory material.
 *   [Instructor's Guide](instructors.html)
 
 This lesson is available on github, if you would like to suggest a change
-make a pull request to the [lesson repository](https://github.com/andre.geldenhuis/Latex-Short).
+make a pull request to the [lesson repository](https://github.com/andre-geldenhuis/Latex-Short).
