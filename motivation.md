@@ -15,14 +15,12 @@ subtitle: Motivation
 - The output looks great -- more professional than MS office
     - Text is formatted as a whole, rather than as individual characters
 
-
 ## Why Choose LaTeX? 
 
-- LaTeX:(CHANGE TO THE AVAST IMAGE}
-- ![this is the image's title](fig/Sample_latex.png "this is the image's alt text")
-## Why Choose LaTeX?
-- Word: (SAME SLIDE IF IT WILL FIT)
-- ![this is the image's title](fig/Sample_word.png "this is the image's alt text")
+LaTeX:
+![this is the image's title](fig/Sample_latex.png "this is the image's alt text")
+Word: 
+![this is the image's title](fig/Sample_word.png "this is the image's alt text")
 
 ## Why Choose LaTeX? 
 - You can focus on the actual writing, rather than the formatting
@@ -61,9 +59,9 @@ subtitle: Motivation
 ## Other great things about LaTeX
 
 - It's very easy to make shortcuts (also known as macros) e.g.
-    - accented text: \maori to produce m(ACCENTED \=a)ori
-    - long words: \rimu to produce *dacrydium cupressinum*
-    - formatted text: \oneJPtP to produce <sup>1</sup>*J*<sub>Pt-P</sub>
+    - accented text: ```\maori``` to produce m&#257;ori
+    - long words: ```\rimu``` to produce *dacrydium cupressinum*
+    - formatted text: ```\oneJPtP``` to produce <sup>1</sup>*J*<sub>Pt-P</sub>
 
 ## Other great things about LaTeX
 
@@ -73,10 +71,11 @@ subtitle: Motivation
     - OR you can get really involved in styles and formatting control -- there are many fancy things you can do!
 - It handles large documents very well (and you don't have to typeset the whole thing every time)
   
-## Common complaints about LaTeX and why they're wrong
+## Common complaints about LaTeX 
+### (and why they're wrong)
 
 - You have to learn how to code
     - Not really.  There are a few commands that you have to use, but they're more like keyboard shortcuts (e.g. ctrl+B for bold) than proper coding
 - There's a steep learning curve
-    - Word also has a steep learning curve for anything more than the basics!
-    - The pay off is definitely worth it.
+    - Word also has a steep learning curve for anything more than the basics
+    - The pay off is definitely worth it!

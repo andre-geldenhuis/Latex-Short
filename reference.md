@@ -19,6 +19,10 @@ subtitle: Reference
 
 ...commands and examples...
 
+## [Where The Magic Happens](05-five.html)
+
+...commands and examples...
+
 ## Glossary
 
 key word 1

@@ -37,3 +37,5 @@ behind its running example).
 * Note that references are case sensitive.  Additionally splitting a label
     name with an underscore does not work. cool_rocket will cause hard to
     diagnose errors.
+    
+## [Where The Magic Happens](05-five.html)
