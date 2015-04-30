@@ -109,7 +109,64 @@ justo turpis a justo.
 <p>There are actually three ways to italicise text in LaTeX, can your work out what the differences are?</p>
 </div>
 </div>
-<p>Math mode is used to generate mathematical equations and symbols. It is also used to generate many non math symbols.</p>
+<p>LaTeX lets you add a huge variety of symbols to your document. The easiest way to add these symbols to your document is to use Math Mode. There are several ways to use math mode but for now we we use inline math mode. We do this by placing our symbol command inside a pair of <code>$</code>. To create the greek character alpha we enter <code>$ \alpha $</code></p>
+<div id="apply-some-symbols-your-document" class="challenge panel panel-success">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pencil"></span>Apply some symbols your document</h2>
+</div>
+<div class="panel-body">
+<p>Add the symbols <code>\alpha</code>, <code>\rightarrow</code> and <code>\Rightarrow</code>. How would we add the logic symbol for all or exists? You can also put multiple symbols inside the pair of <code>$  $</code>.</p>
+</div>
+</div>
+<p>The space between the <code>$  $</code> symbols is known as an environment, in this case, the maths environment. We also use this math mode environment to create accented characters. This is done via an accent command with the character as the argument. For instance we can create and acute e by entering <code>$ \acute{e} $</code></p>
+<div id="add-accented-characters-to-your-document." class="challenge panel panel-success">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pencil"></span>Add accented characters to your document.</h2>
+</div>
+<div class="panel-body">
+<p>The accenting commands are <code>\hat{a}</code> , <code>\acute{a}</code> , <code>\bar{a}</code> , <code>\dot{a}</code> , <code>\breve{a}</code> ,<br /> <code>\check{a}</code> , <code>\grave{a}</code> , <code>\vec{a}</code> , <code>\ddot{a}</code> , <code>\tilde{a}</code> Try put some accented characters into your document.</p>
+</div>
+</div>
+<div id="latex-handles-all-formatting" class="callout panel panel-info">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pushpin"></span>LaTeX handles all formatting</h2>
+</div>
+<div class="panel-body">
+<p>If you are anything like me, you might have just copy pasted the the accent commands directly into the environment between a pair of <code>$  $</code>. What happens to the spaces? What about a return breaking the line?</p>
+</div>
+</div>
+<p>Math mode is also useful for superscript and subscript. <code>^</code> is used for super script and <code>_</code> is used for subscript.</p>
+<div id="use-superscript-and-subscript-in-your-document." class="challenge panel panel-success">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pencil"></span>Use superscript and subscript in your document.</h2>
+</div>
+<div class="panel-body">
+<p>Try out subscripts and superscripts. How would you apply a superscript to more than one character? Remember to use math mode!</p>
+</div>
+</div>
+<p>Lastly math mode can obviously be used for math!<br /><code>\frac{topline}{bottomline}</code> creates a fraction. Note that this is the first time we have come across a command with multiple arguments.</p>
+<div id="make-a-simple-fraction." class="challenge panel panel-success">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pencil"></span>Make a simple fraction.</h2>
+</div>
+<div class="panel-body">
+<p>Try out a simple fraction in math mode.</p>
+</div>
+</div>
+<p>If we have a more complicated mathematical equation, it should be placed on its own, rather than being inline. Here we use <code>$$ $$</code> to set the display math environment. Equations are one of LaTeX strong points, it allows you to quickly enter equations that would be very hard to create in word. It can look complicated at first, but once you are used to it, it is a fast and reliable way to render equations</p>
+<div id="a-more-complex-equation" class="callout panel panel-info">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pushpin"></span>A more complex equation</h2>
+</div>
+<div class="panel-body">
+<p>Enter the following into a <em>display math</em> enviroment</p>
+<pre class="sourceCode latex"><code class="sourceCode latex">\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}</code></pre>
+<p>or</p>
+<pre class="sourceCode latex"><code class="sourceCode latex">\underbrace{a+\overbrace{b+\cdots}^{{}=t}+z}
+_{\mathrm{total}} ~~
+a+{\overbrace{b+\cdots}}^{126}+z</code></pre>
+</div>
+</div>
         </div>
       </div>
       </article>
