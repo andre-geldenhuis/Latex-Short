@@ -27,36 +27,42 @@
     </div>
 
     <!-- Begin slides. Just make elements with a class of slide. -->
+<section id="what-is-latex" class="slide level2">
+<h1>What is LaTeX?</h1>
+<ul>
+<li>LaTeX is a system for making nicely typeset documents.</li>
+<li>It separates the actual content from the layout
+<ul>
+<li>you write the text THEN typeset to format it</li>
+<li><em>c.f.</em> WYSIWYG editors like MS Word</li>
+</ul></li>
+</ul>
+</section>
 <section id="why-choose-latex" class="slide level2">
 <h1>Why Choose LaTeX?</h1>
 <ul>
 <li>The output looks great -- more professional than MS office
 <ul>
-<li>an example goes here</li>
+<li>Text is formatted as a whole, rather than as individual characters</li>
 </ul></li>
-<li>You can focus on the actual writing, rather than the formatting</li>
-<li>When you DO come to do the formatting, it's easy to RELIABLY make global changes</li>
 </ul>
 </section>
 <section id="why-choose-latex-1" class="slide level2">
-<h1>Why Choose LaTeX</h1>
-<ul>
-<li>LaTeX</li>
-<li><img src="fig/Hello_latex.svg" title="fig:this is the image&#39;s alt text" alt="this is the image&#39;s title" /></li>
-</ul>
+<h1>Why Choose LaTeX?</h1>
+<p>LaTeX: <img src="fig/Sample_latex.png" title="this is the image&#39;s alt text" alt="this is the image&#39;s title" /> Word: <img src="fig/Sample_word.png" title="this is the image&#39;s alt text" alt="this is the image&#39;s title" /></p>
 </section>
 <section id="why-choose-latex-2" class="slide level2">
-<h1>Why Choose LaTeX</h1>
+<h1>Why Choose LaTeX?</h1>
 <ul>
-<li>Word</li>
-<li><img src="fig/Hello_word.svg" title="fig:this is the image&#39;s alt text" alt="this is the image&#39;s title" /></li>
+<li>You can focus on the actual writing, rather than the formatting</li>
+<li>When you DO come to do the formatting, it's easy to RELIABLY make global changes</li>
 </ul>
 </section>
 <section id="other-great-things-about-latex" class="slide level2">
 <h1>Other great things about LaTeX</h1>
 <ul>
-<li>You can get a lot of control with a little effort</li>
-<li>Independent of your computer’s platform -- you can open tex files on any system AND it’s free.
+<li>You can get a lot of control with little effort</li>
+<li>It's independent of your computer’s platform -- you can open tex files on any system AND it’s free.
 <ul>
 <li>Free as in speech and free as in beer</li>
 </ul></li>
@@ -80,10 +86,12 @@
 <li>The output is trustworthy and consistent
 <ul>
 <li>You won't get random changes of font</li>
-<li>When you change the document settings, it changes them everywhere</li>
+<li>When you change the document settings, it changes them everywhere
+<ul>
 <li>So it won't matter if you forget to select say your figure captions</li>
-<li>You can automatically create your table of contents AND have it link to the right parts of your document</li>
 </ul></li>
+</ul></li>
+<li>You can automatically create your table of contents AND have it link to the right parts of your document</li>
 </ul>
 </section>
 <section id="other-great-things-about-latex-3" class="slide level2">
@@ -94,9 +102,9 @@
 <li>You can shuffle around pieces of your document without worrying about the order</li>
 <li>Things that update automatically:
 <ul>
-<li>section/chapter numbering</li>
+<li>section/chapter numbering/TOC</li>
 <li>Figures/tables/schemes (also known as &quot;floats&quot;)</li>
-<li>Equations and compounds -- you can even get automatic numbering to happen WITHIN your scheme images</li>
+<li>Equations and compounds -- you can even get automatic numbering to happen WITHIN your images</li>
 </ul></li>
 </ul></li>
 </ul>
@@ -104,61 +112,39 @@
 <section id="other-great-things-about-latex-4" class="slide level2">
 <h1>Other great things about LaTeX</h1>
 <ul>
-<li>It's very easy to make shortcuts (also known as macros)
+<li>It's very easy to make shortcuts (also known as macros) e.g.
 <ul>
-<li>-- give some examples -- chemistry coupling constants, long words, words with accents</li>
+<li>accented text: <code>\maori</code> to produce māori</li>
+<li>long words: <code>\rimu</code> to produce <em>dacrydium cupressinum</em></li>
+<li>formatted text: <code>\oneJPtP</code> to produce <sup>1</sup><em>J</em><sub>Pt-P</sub></li>
 </ul></li>
 </ul>
 </section>
 <section id="other-great-things-about-latex-5" class="slide level2">
 <h1>Other great things about LaTeX</h1>
 <ul>
-<li>A new line doesn't mean a new paragraph, which is really great for lists of data
-<ul>
-<li>e.g chemistry NMR list</li>
-<li>some other example that's not from chemistry</li>
-</ul></li>
-</ul>
-</section>
-<section id="other-great-things-about-latex-6" class="slide level2">
-<h1>Other great things about LaTeX</h1>
-<ul>
-<li>You can choose your level of use (or a better way of saying this)
+<li>A new line doesn't mean a new paragraph, which is really great for lists of data</li>
+<li>You can choose how involved in the document set up you get
 <ul>
 <li>You can stick to the basics, and it will look great</li>
 <li>OR you can get really involved in styles and formatting control -- there are many fancy things you can do!</li>
 </ul></li>
+<li>It handles large documents very well (and you don't have to typeset the whole thing every time)</li>
 </ul>
 </section>
-<section id="common-complaints-about-latex-and-why-theyre-wrong" class="slide level2">
-<h1>Common complaints about LaTeX and why they're wrong</h1>
+<section id="common-complaints-about-latex" class="slide level2">
+<h1>Common complaints about LaTeX</h1>
+<h3 id="and-why-theyre-wrong">(and why they're wrong)</h3>
 <ul>
 <li>You have to learn how to code
 <ul>
 <li>Not really. There are a few commands that you have to use, but they're more like keyboard shortcuts (e.g. ctrl+B for bold) than proper coding</li>
 </ul></li>
-<li>Some more things -- steep learning curve
+<li>There's a steep learning curve
 <ul>
-<li>Word also has a steep learning curve for anything more than the basics!</li>
+<li>Word also has a steep learning curve for anything more than the basics</li>
+<li>The pay off is definitely worth it!</li>
 </ul></li>
-</ul>
-</section>
-<section id="other-things-to-incorporate" class="slide level2">
-<h1>Other things to incorporate</h1>
-<ul>
-<li>an explanation of the difference between LaTeX and word (WYSIWYG vs write now, typeset later [or a nicer way of saying that])</li>
-</ul>
-</section>
-<section id="learn-more" class="slide level2">
-<h1>Learn More</h1>
-<ul>
-<li><a href="http://software-carpentry.org">http://software-carpentry.org</a></li>
-<li><script type="text/javascript">
-<!--
-h='&#x73;&#x6f;&#102;&#116;&#x77;&#x61;&#114;&#x65;&#x2d;&#x63;&#x61;&#114;&#112;&#x65;&#110;&#116;&#114;&#x79;&#46;&#x6f;&#114;&#x67;';a='&#64;';n='&#x61;&#100;&#x6d;&#x69;&#110;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
-// -->
-</script><noscript>&#x61;&#100;&#x6d;&#x69;&#110;&#32;&#x61;&#116;&#32;&#x73;&#x6f;&#102;&#116;&#x77;&#x61;&#114;&#x65;&#x2d;&#x63;&#x61;&#114;&#112;&#x65;&#110;&#116;&#114;&#x79;&#32;&#100;&#x6f;&#116;&#32;&#x6f;&#114;&#x67;</noscript></li>
 </ul>
 </section>
     <!-- End slides. -->
