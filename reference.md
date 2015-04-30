@@ -15,6 +15,10 @@ subtitle: Reference
 
 ...commands and examples...
 
+## [Images, Figures and Cross Referencing](04-four.html)
+
+...commands and examples...
+
 ## Glossary
 
 key word 1

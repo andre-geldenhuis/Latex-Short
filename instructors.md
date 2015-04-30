@@ -31,3 +31,5 @@ behind its running example).
 
 ## [Formatting, symbols and math](03-three.html)
 *   ET cetera.
+
+## [Images, Figures and Cross Referencing](04-four.html)

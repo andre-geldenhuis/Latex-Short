@@ -15,6 +15,7 @@ Paragraph of introductory material.
 1.  [Document Structure and Basics](01-one.html)
 2.  [Sections, subsections and the table of contents](02-two.html)
 3.  [Formatting, symbols and math](03-three.html)
+4.  [Images, Figures and Cross Referencing](04-four.html)
 
 ## Other Resources
 
