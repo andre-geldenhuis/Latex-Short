@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="pandoc">
+    <title>Software Carpentry: LaTeX</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/swc.css" />
+    <link rel="alternate" type="application/rss+xml" title="Software Carpentry Blog" href="http://software-carpentry.org/feed.xml"/>
+    <meta charset="UTF-8" />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body class="lesson">
+    <div class="container card">
+      <div class="banner">
+        <a href="http://andre-geldenhuis.github.io/Latex-Short/" title="Test Lesson">
+          <img alt="Test Lesson banner" src="img/software-carpentry-banner.png" />
+        </a>
+      </div>
+      <article>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <h1 class="title">LaTeX</h1>
+          <h2 class="subtitle">Where The Magic Happens</h2>
+<div id="learning-objectives" class="objectives panel panel-warning">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-certificate"></span>Learning Objectives</h2>
+</div>
+<div class="panel-body">
+<ul>
+<li>Preamble</li>
+<li>Macros</li>
+</ul>
+</div>
+</div>
+<p>If you have been following along you should have roughly the following document in ShareLatex. You should also havea folder called images with the following two files in it. <a href="https://github.com/andre-geldenhuis/Latex-Short/blob/gh-pages/fig/space_rocket.pdf">space_rocket.pdf</a> and <a href="https://github.com/andre-geldenhuis/Latex-Short/blob/gh-pages/fig/polarplot.eps">polarplot.eps</a></p>
+<pre class="sourceCode latex"><code class="sourceCode latex">\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\title{Latex Intro}
+\author{Andre Geldenhuis }
+\date{April 2015}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\listoffigures
+
+\section{Introduction}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce risus 
+urna, finibus at augue luctus, mattis mollis tellus. Aliquam consequat 
+accumsan magna sit amet vestibulum. Cum sociis natoque penatibus et 
+magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut 
+pellentesque mauris. Nulla ac dolor at leo hendrerit interdum. Etiam 
+vulputate posuere nisi in tincidunt. Sed non scelerisque purus. Phasellus 
+efficitur faucibus nisl, eget posuere urna. Phasellus tincidunt dui 
+lacus, in semper nulla volutpat eget. Pellentesque habitant morbi 
+tristique senectus et netus et malesuada fames ac turpis egestas. 
+Suspendisse nibh massa, rhoncus aliquam mattis in, ultrices eu urna. 
+Vivamus in accumsan erat. See equation \ref{eq:TooComplex} on page \pageref{eq:TooComplex}.
+
+
+\section{Thesis}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu nisl nisi. Curabitur sagittis sodales laoreet. Fusce efficitur dictum orci, sed viverra ex ullamcorper a. Morbi sem libero, placerat eu augue nec, hendrerit eleifend tortor. Curabitur auctor magna eget hendrerit accumsan. Aenean faucibus magna sed enim ullamcorper vulputate. Aliquam non eros ac quam sollicitudin cursus eu ac est. Donec consectetur eget nibh id mollis. Quisque euismod diam velit, quis pretium justo accumsan id. Figure \ref{fig:CoolRocket} on page \pageref{fig:CoolRocket}
+
+\subsection{Abstract}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris facilisis, diam pretium pretium lobortis, metus dolor fermentum augue, ultrices consequat dolor tortor nec risus. Aenean sagittis hendrerit turpis, a porta eros facilisis in. In efficitur posuere risus, eu ullamcorper arcu. Morbi fermentum auctor arcu, non interdum ligula placerat maximus. Morbi nec metus et urna gravida rhoncus. Donec interdum, nisi vitae volutpat vehicula, odio eros pulvinar mauris, ac mollis elit enim sit amet diam. Ut blandit hendrerit luctus. Duis eget augue sed mi pellentesque mattis non finibus libero. Aliquam rhoncus, orci tempus consectetur mattis, enim turpis dignissim eros, sit amet sollicitudin justo turpis a justo. See Figure \ref{fig:CoolRocket}
+
+\section{Math Mode}
+
+$ \alpha \rightarrow \Rightarrow \exists \forall $
+$ \acute{e} $
+
+$ \hat{a} , \acute{a} , \bar{a} , \dot{a} , \breve{a} ,
+\check{a} , \grave{a} , \vec{a} , \ddot{a} , \tilde{a} $
+
+$hello^2$ $hello_2$ $hello_{world}$ 
+
+$\frac{topline}{bottomline}$
+
+\begin{equation}
+\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}
+\end{equation}
+
+\begin{equation}
+\underbrace{a+\overbrace{b+\cdots}^{{}=t}+z}
+_{\mathrm{total}} ~~
+a+{\overbrace{b+\cdots}}^{126}+z
+\label{eq:TooComplex}
+\end{equation}
+
+\section{Images}
+
+\begin{figure}[h]
+    \caption{Cool Polar plot\label{fig:CoolPolarPlot}}
+    \centering
+    \includegraphics[width=0.2\paperwidth]{polarplot}
+\end{figure}
+
+\begin{figure}[h]
+    \caption{The Rocket Equation $\Delta V = \nu_e \ln\frac{m_0}{m_1}$\label{fig:CoolRocket}}
+    \centering
+    \includegraphics[width=0.2\paperwidth]{space_rocket}
+\end{figure}
+
+\end{document}</code></pre>
+        </div>
+      </div>
+      </article>
+      <div class="footer">
+        <a class="label swc-blue-bg" href="http://software-carpentry.org">Based on Software Carpentry</a>
+        <a class="label swc-blue-bg" href="https://github.com/andre-geldenhuis/Latex-Short">Source</a>
+        <a class="label swc-blue-bg" href="mailto:andre.geldenhuis@vuw.ac.nz">Contact</a>
+        <a class="label swc-blue-bg" href="LICENSE.html">License</a>
+      </div>
+    </div>
+    <!-- Javascript placed at the end of the document so the pages load faster -->
+    <script src="http://software-carpentry.org/v5/js/jquery-1.9.1.min.js"></script>
+    <script src="css/bootstrap/bootstrap-js/bootstrap.js"></script>
+  </body>
+</html>
