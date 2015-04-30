@@ -10,11 +10,28 @@ subtitle: Motivation
 - You can focus on the actual writing, rather than the formatting
 - When you DO come to do the formatting, it's easy to RELIABLY make global changes
 
+## Why Choose LaTeX 
+
+- LaTeX
+- ![this is the image's title](fig/Hello_latex.svg "this is the image's alt text")
+
+## Why Choose LaTeX 
+
+- Word
+- ![this is the image's title](fig/Hello_word.svg "this is the image's alt text")
+
 ## Other great things about LaTeX
 
 - You can get a lot of control with a little effort
 - Independent of your computer’s platform -- you can open tex files on any system AND it’s free.
     - Free as in speech and free as in beer
+    
+## Other great things about LaTeX
+- Archival.
+    - Your document should still compile in 50 years time.  
+    - In the worst case, source is plain text
+    - TeX was originally written in 1978, original TeX documents still compile perfectly.
+    - Is this the case with Word 97?  Wordstar?  Lotus Notes?
 
 ## Other great things about LaTeX
 
@@ -62,19 +79,6 @@ subtitle: Motivation
 ## Other things to incorporate
  
 - an explanation of the difference between LaTeX and word (WYSIWYG vs write now, typeset later [or a nicer way of saying that])
-
-
-## Outcomes
-
-- 20% improvement in productivity is common.
-- 10X isn't rare.
-
-
-## Outcomes
-
-- Empowers people.
-- HPC, the cloud, web services, big data, ...
-- Reproducible research, open science, ...
 
 
 ## Learn More
