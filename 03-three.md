@@ -103,7 +103,7 @@ entering ```$ \acute{e} $```
 
 > ## Add accented characters to your document. {.challenge}
 >
-> The accenting commands are 
+> Some of the accenting commands are:
 >  ```\hat{a}``` , ```\acute{a}``` , ```\bar{a}``` ,  ```\dot{a}``` , ```\breve{a}``` ,  
 >  ```\check{a}``` , ```\grave{a}``` , ```\vec{a}``` , ```\ddot{a}``` , ```\tilde{a}``` 
 > Try put some accented characters into your document.
@@ -138,7 +138,7 @@ allows you to quickly enter equations that would be very hard to create
 in word.  It can look complicated at first, but once you are used to it,
 it is a fast and reliable way to render equations
 
-> ## A more complex equation {.callout}
+> ## A more complex equation {.challenge}
 > 
 > Enter the following into a *display math* enviroment
 > ```{.latex}

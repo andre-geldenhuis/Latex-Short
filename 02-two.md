@@ -10,10 +10,6 @@ minutes: 10
 > *  **T**able **o**f **C**ontents (TOC)
 > * Searching for help
 
-> * Simple use of Math Mode
-> * Basic formatting in LaTeX
-> * Images and Floats
-
 If you are using ShareLatex you will already have a section in your document.
 Otherwise, you can copy the following commands into your LaTeX editor.
 
@@ -86,7 +82,7 @@ create a table of contents.
 > to appear.  Once your document compiles, try moving 
 > ```\tableofcontents``` somewhere else.  What happens if you move it
 > before ```\begin{document}```? Have a look at the error message.
-> What kif you moved it about after ```end{document}``` ?  Return
+> What if you moved it about after ```end{document}``` ?  Return
 > the TOC to a sensible location when done and make sure your document
 > compiles without errors 
 
