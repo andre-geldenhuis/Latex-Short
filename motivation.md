@@ -19,10 +19,10 @@ subtitle: Motivation
 ## Why Choose LaTeX? 
 
 - LaTeX:(CHANGE TO THE AVAST IMAGE}
-- ![this is the image's title](fig/Hello_latex.svg "this is the image's alt text")
+- ![this is the image's title](fig/Sample_latex.png "this is the image's alt text")
 ## Why Choose LaTeX?
 - Word: (SAME SLIDE IF IT WILL FIT)
-- ![this is the image's title](fig/Hello_word.svg "this is the image's alt text")
+- ![this is the image's title](fig/Sample_word.png "this is the image's alt text")
 
 ## Why Choose LaTeX? 
 - You can focus on the actual writing, rather than the formatting
