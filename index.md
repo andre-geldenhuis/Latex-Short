@@ -22,3 +22,6 @@ Paragraph of introductory material.
 *   [Reference](reference.html)
 *   [Discussion](discussion.html)
 *   [Instructor's Guide](instructors.html)
+
+This lesson is available on github, if you would like to suggest a change
+make a pull request to the [lesson repository](https://github.com/andre-geldenhuis/Latex-Short).
