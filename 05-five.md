@@ -1,13 +1,14 @@
 ---
 layout: page
 title: LaTeX
-subtitle: Where The Magic Happens
+subtitle: Where The Magic Happens -- Preamble and Macros
 minutes: 10
 ---
 > ## Learning Objectives {.objectives}
 >
 > * Preamble
 > * Macros
+> * References
 
 If you have been following along you should have roughly the following
 document in ShareLatex.  You should also havea  folder called images
@@ -94,3 +95,77 @@ a+{\overbrace{b+\cdots}}^{126}+z
 
 \end{document}
 ~~~
+
+Now that we have a more substantive document, we can experiment with changing
+the preamble to automatically make large changes to our document.   In 
+first lesson we noticed that LaTeX makes a document with large margins in 
+order to manage to words per line.  One elegant way to make better use of
+space is to use a two column layout.  This is done by adding an argument
+to the ```\documentclass{article}``` on the first line.
+
+> ## Add a figure frame  {.challenge}
+> Add ```[twocolumn]``` to your document class.  
+
+> ## More reasonable margins {.callout}
+>
+> LaTeX has automatically reduced the size of the margins in order to as
+> it needs a bit more room for the correct words per line in two column
+> layouts.  Note you can manually set the margin size by using commands
+> in the preamble.
+
+Some changes made in the preamble can be more subtle.
+
+> ## Microtype {.challenge}
+> Add the package microtype in your preamble ```\usepackage{microtype}```
+
+These changes are subtle modifications on the inter word spacing and 
+kerning.  It tends to make your document look just a little bit 
+better. [Tips on Writing a Thesis in LaTeX](http://www.khirevich.com/latex/microtype/) provides
+a good overview of what it does.
+
+If you want to add coloured fonts to your document, you will need to 
+include the package ```\usepackage{color}```.  You can then add colour
+to text by using a textcolor environment. ```\textcolor{red}{some text I want red}```
+ 
+> ## Colour some text {.challenge}
+> Add some colour to your document.  Remember you will be using the 
+> American spelling of colour!
+
+> ## More colours {.callout}
+>
+> You may notice that there an't many colours you can directly use
+> with the simple ```\usepackage{color}```.  If you need more colours
+> you can either use the xcolor argument ```\usepackage[usenames,dvipsnames]{xcolor}```
+> which gives you 68 more named colours or you can predefine your own
+> colours in your preamble.  Google has good resources on this.
+
+Suppose that in the process of writing your document you need to add red 
+text quite regularly, typing ```\textcolor{red}{some text I want red}``` 
+every time might get a bit tiresome. This is where macros come in, they
+are one of LaTeX most powerful features.  Macros allow you to create new,
+custom commands for LaTeX.  In fact LaTeX is just TeX with many macros that
+make things easier.  
+
+
+> ## Make a macro {.challenge}
+>
+> Lets make a new command called ```\colourtxt``` we do this by adding the
+> following commands into the preamble 
+> ```\newcommand{\colourtxt} [1] {  \textcolor{red}{#1}  }```.  To make 
+> some text red in your document, use ```\colourtxt{The Text I want red}```.
+> Note that LaTeX ignores spaces in commands, so I have spaced this line
+> out more than you usually would to try to clarify it a bit.
+
+> ## Macro Syntax {.callout}
+>
+> The syntax can seem a bit confusing at first, it helps to break it 
+> down. ```\newcommand{\colourtxt}``` creates our new command.  ```[1]```
+> specifies that we have one argument for our new command.  ```{  \textcolor{red}{#1}  }```
+> is the set of commands that run whenever we call ```\colourtxt```.  In 
+> fact we could have put as many commands into this ```{   }``` pair as 
+> we liked to do arbitrarily complicated things.  However in this case
+> the only command we are running is ```\textcolor{red}{#1}``` the ```{#1}```
+> gets replaced by whatever we put inside the ```\colourtxt{sometext}``` brackets.
+
+
+
