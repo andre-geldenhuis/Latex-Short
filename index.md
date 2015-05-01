@@ -26,5 +26,10 @@ Paragraph of introductory material.
 *   [Discussion](discussion.html)
 *   [Instructor's Guide](instructors.html)
 
+We have also prepared a large example document with as many features
+as we could cram in.  Sarah has shared it on ShareLaTeX [here](https://www.sharelatex.com/project/5542ba6d65ac94b22149d343).
+It is an excellent reference for how to do many things like multi file documents etc and we
+will be referring to it in the second half.
+
 This lesson is available on github, if you would like to suggest a change
 make a pull request to the [lesson repository](https://github.com/andre-geldenhuis/Latex-Short).
