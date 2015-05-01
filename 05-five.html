@@ -27,7 +27,7 @@
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
           <h1 class="title">LaTeX</h1>
-          <h2 class="subtitle">Where The Magic Happens</h2>
+          <h2 class="subtitle">Where The Magic Happens -- Preamble and Macros</h2>
 <div id="learning-objectives" class="objectives panel panel-warning">
 <div class="panel-heading">
 <h2><span class="glyphicon glyphicon-certificate"></span>Learning Objectives</h2>
@@ -36,6 +36,7 @@
 <ul>
 <li>Preamble</li>
 <li>Macros</li>
+<li>References</li>
 </ul>
 </div>
 </div>
@@ -117,6 +118,67 @@ a+{\overbrace{b+\cdots}}^{126}+z
 \end{figure}
 
 \end{document}</code></pre>
+<p>Now that we have a more substantive document, we can experiment with changing the preamble to automatically make large changes to our document. In first lesson we noticed that LaTeX makes a document with large margins in order to manage to words per line. One elegant way to make better use of space is to use a two column layout. This is done by adding an argument to the <code>\documentclass{article}</code> on the first line.</p>
+<div id="add-a-figure-frame" class="challenge panel panel-success">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pencil"></span>Add a figure frame</h2>
+</div>
+<div class="panel-body">
+<p>Add <code>[twocolumn]</code> to your document class.</p>
+</div>
+</div>
+<div id="more-reasonable-margins" class="callout panel panel-info">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pushpin"></span>More reasonable margins</h2>
+</div>
+<div class="panel-body">
+<p>LaTeX has automatically reduced the size of the margins in order to as it needs a bit more room for the correct words per line in two column layouts. Note you can manually set the margin size by using commands in the preamble.</p>
+</div>
+</div>
+<p>Some changes made in the preamble can be more subtle.</p>
+<div id="microtype" class="challenge panel panel-success">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pencil"></span>Microtype</h2>
+</div>
+<div class="panel-body">
+<p>Add the package microtype in your preamble <code>\usepackage{microtype}</code></p>
+</div>
+</div>
+<p>These changes are subtle modifications on the inter word spacing and kerning. It tends to make your document look just a little bit better. <a href="http://www.khirevich.com/latex/microtype/">Tips on Writing a Thesis in LaTeX</a> provides a good overview of what it does.</p>
+<p>If you want to add coloured fonts to your document, you will need to include the package <code>\usepackage{color}</code>. You can then add colour to text by using a textcolor environment. <code>\textcolor{red}{some text I want red}</code></p>
+<div id="colour-some-text" class="challenge panel panel-success">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pencil"></span>Colour some text</h2>
+</div>
+<div class="panel-body">
+<p>Add some colour to your document. Remember you will be using the American spelling of colour!</p>
+</div>
+</div>
+<div id="more-colours" class="callout panel panel-info">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pushpin"></span>More colours</h2>
+</div>
+<div class="panel-body">
+<p>You may notice that there an't many colours you can directly use with the simple <code>\usepackage{color}</code>. If you need more colours you can either use the xcolor argument <code>\usepackage[usenames,dvipsnames]{xcolor}</code> which gives you 68 more named colours or you can predefine your own colours in your preamble. Google has good resources on this.</p>
+</div>
+</div>
+<p>Suppose that in the process of writing your document you need to add red text quite regularly, typing <code>\textcolor{red}{some text I want red}</code> every time might get a bit tiresome. This is where macros come in, they are one of LaTeX most powerful features. Macros allow you to create new, custom commands for LaTeX. In fact LaTeX is just TeX with many macros that make things easier.</p>
+<div id="make-a-macro" class="challenge panel panel-success">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pencil"></span>Make a macro</h2>
+</div>
+<div class="panel-body">
+<p>Lets make a new command called <code>\colourtxt</code> we do this by adding the following commands into the preamble <code>\newcommand{\colourtxt} [1] {  \textcolor{red}{#1}  }</code>. To make some text red in your document, use <code>\colourtxt{The Text I want red}</code>. Note that LaTeX ignores spaces in commands, so I have spaced this line out more than you usually would to try to clarify it a bit.</p>
+</div>
+</div>
+<div id="macro-syntax" class="callout panel panel-info">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pushpin"></span>Macro Syntax</h2>
+</div>
+<div class="panel-body">
+<p>The syntax can seem a bit confusing at first, it helps to break it down. <code>\newcommand{\colourtxt}</code> creates our new command. <code>[1]</code> specifies that we have one argument for our new command. <code>{  \textcolor{red}{#1}  }</code> is the set of commands that run whenever we call <code>\colourtxt</code>. In fact we could have put as many commands into this <code>{   }</code> pair as we liked to do arbitrarily complicated things. However in this case the only command we are running is <code>\textcolor{red}{#1}</code> the <code>{#1}</code> gets replaced by whatever we put inside the <code>\colourtxt{sometext}</code> brackets.</p>
+</div>
+</div>
         </div>
       </div>
       </article>
