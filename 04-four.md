@@ -101,7 +101,7 @@ To add an image we use the command ```include{imagename}```.
 > ## Upload an image to ShareLatex so we can use it  {.challenge}
 > 
 > Make a new folder in your sharelatex document (upper left, above main.tex)
-> Call the new folder images.  Download [this image](https://github.com/Andre Geldenhuis and Sarah Hoyte/Latex-Short/blob/gh-pages/fig/space_rocket.pdf) and then
+> Call the new folder images.  Download [this image](https://github.com/andre.geldenhuis/Latex-Short/blob/gh-pages/fig/space_rocket.pdf) and then
 > upload it to the images folder in sharelatex (upload button next to the 
 > new folder button).  If the file ends up in the wrong location you can
 > just drag and drop it to the images folder. 
@@ -204,7 +204,7 @@ is **case sensitive**.
 
 > ## Add another figure {.challenge}
 >
-> Upload the image [polarplot.eps](https://github.com/Andre Geldenhuis and Sarah Hoyte/Latex-Short/blob/gh-pages/fig/polarplot.eps)
+> Upload the image [polarplot.eps](https://github.com/andre.geldenhuis/Latex-Short/blob/gh-pages/fig/polarplot.eps)
 > to your images folder on ShareLatex.  Above the figure you already have, 
 > add the new image in its own figure environment. Give it its own caption 
 > and label.
