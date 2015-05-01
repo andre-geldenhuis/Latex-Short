@@ -113,7 +113,7 @@ the document text.  This is where you write your document.
 > Something you will likely have noticed by now is the large margins on your
 > document.  This is because LaTeX is trying to manage your words per line
 > for optimal readability.  We will cover ways to make better use of the
-> page in the third lesson.
+> page in the fifth lesson.
 
 
 

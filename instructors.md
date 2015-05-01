@@ -38,4 +38,4 @@ behind its running example).
     name with an underscore does not work. cool_rocket will cause hard to
     diagnose errors.
     
-## [Where The Magic Happens](05-five.html)
+## [Where The Magic Happens -- Preamble and Macros](05-five.html)
