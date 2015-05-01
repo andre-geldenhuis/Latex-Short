@@ -179,6 +179,35 @@ a+{\overbrace{b+\cdots}}^{126}+z
 <p>The syntax can seem a bit confusing at first, it helps to break it down. <code>\newcommand{\colourtxt}</code> creates our new command. <code>[1]</code> specifies that we have one argument for our new command. <code>{  \textcolor{red}{#1}  }</code> is the set of commands that run whenever we call <code>\colourtxt</code>. In fact we could have put as many commands into this <code>{   }</code> pair as we liked to do arbitrarily complicated things. However in this case the only command we are running is <code>\textcolor{red}{#1}</code> the <code>{#1}</code> gets replaced by whatever we put inside the <code>\colourtxt{sometext}</code> brackets.</p>
 </div>
 </div>
+<div id="use-your-macro." class="challenge panel panel-success">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pencil"></span>Use your macro.</h2>
+</div>
+<div class="panel-body">
+<p>Use you macro to make some text in your document red.</p>
+</div>
+</div>
+<div id="make-global-changes" class="callout panel panel-info">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pushpin"></span>Make global changes</h2>
+</div>
+<div class="panel-body">
+<p>Suppose you now decided that you would rather the text were green. Because you used a macro, you can just change the colour in the macro definition rather than everywhere you added colour.</p>
+</div>
+</div>
+<p>The last thing we will cover today is referencing. Download the following <a href="https://github.com/andre-geldenhuis/Latex-Short/blob/gh-pages/references.bib">bibliography file</a>. Upload it to your ShareLatex document. It doesn't need to be in its own folder.</p>
+<p>We can now add a simple bibliography by adding the following just above our <code>end{document}</code> command.</p>
+<pre class="sourceCode latex"><code class="sourceCode latex">\bibliography{references}
+\bibliographystyle{plain}</code></pre>
+<p>To use the bibliography we use the cite keys in the .bib file. We use the <code>\cite{key}</code> to add the citation to our document.</p>
+<div id="add-a-citation" class="challenge panel panel-success">
+<div class="panel-heading">
+<h2><span class="glyphicon glyphicon-pencil"></span>Add a citation</h2>
+</div>
+<div class="panel-body">
+<p>Add a citation with the cite key Blue2003. Compile your document and see the changes. Try add another citation using a different cite key.</p>
+</div>
+</div>
         </div>
       </div>
       </article>

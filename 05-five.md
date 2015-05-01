@@ -167,5 +167,40 @@ make things easier.
 > the only command we are running is ```\textcolor{red}{#1}``` the ```{#1}```
 > gets replaced by whatever we put inside the ```\colourtxt{sometext}``` brackets.
 
+> ## Use your macro. {.challenge}
+>
+> Use you macro to make some text in your document red.
+
+> ## Make global changes {.callout}
+>
+> Suppose you now decided that you would rather the text were green.  Because
+> you used a macro, you can just change the colour in the macro definition
+> rather than everywhere you added colour.
+
+The last thing we will cover today is referencing.  Download the 
+following [bibliography file](https://github.com/andre-geldenhuis/Latex-Short/blob/gh-pages/references.bib). Upload
+it to your ShareLatex document. It doesn't need to be in its own folder.
+
+We can now add a simple bibliography by adding the following just above our
+```end{document}``` command.
+
+~~~ {.latex}
+\bibliography{references}
+\bibliographystyle{plain}
+~~~
+
+To use the bibliography we use the cite keys in the .bib file.  We use the
+```\cite{key}``` to add the citation to our document.
+
+> ## Add a citation {.challenge}
+>
+> Add a citation with the cite key Blue2003.  Compile your document and
+> see the changes.  Try add another citation using a different cite key.
+
+ 
+
+
+
+
 
 
